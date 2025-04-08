@@ -69,6 +69,7 @@ public class SalamanderSearchTest {
         assertEquals("No salamander present", exception.getMessage());
     }
 
+
     @Test
     public void testSalamanderLocation_at_1_2() {
         char[][] enclosure = {
@@ -230,6 +231,7 @@ public class SalamanderSearchTest {
         assertEquals(1, moves.size());
         assertTrue(moveSet.contains("0,1"));
     }
+
 
     private Set<String> toSet(List<int[]> list) {
         Set<String> set = new HashSet<>();
